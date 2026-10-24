@@ -1,0 +1,33 @@
+.container{
+    background-color:antiquewhite;
+    display: flex;
+    height:600px;
+    /* flex-direction: column;
+    justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap-reverse; */
+
+}
+
+.box{
+    height: 100px;
+    width:100px;
+    margin: 6px;
+}
+
+#box1{
+    background-color: Blue;
+    flex-basis: 200px;
+}
+
+#box2{
+    background-color: aquamarine;
+}
+
+#box3{
+    background-color: orange;
+}
+
+#box4{
+    background-color: brown;
+}
