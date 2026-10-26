@@ -1,0 +1,56 @@
+ * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            background-color: #eaffea;
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container {
+            /* Is container ko CSS Grid layout banata hai. */
+            display: grid;
+
+            /* 3 columns banata hai: sidebar chhota, baaki content area bada. */
+            grid-template-columns:1fr 2fr 2fr;
+
+            /* Grid items ke beech row aur column dono taraf space deta hai. */
+            gap: 8px;
+        }
+
+        .item {
+            min-height: 90px;
+
+            /* Har item ke andar bhi Grid use karke text ko beech mein rakhta hai. */
+            display: grid;
+
+            /* Text ko horizontal aur vertical dono direction mein center karta hai. */
+            place-items: center;
+            border: 1px solid green;
+            background-color: #32f52f;
+            font-weight: bold;
+        }
+
+        #header,
+        #footer {
+            /* Header aur footer ko teeno columns jitni jagah deta hai. */
+            grid-column: span 3;
+        }
+
+        #sidebar {
+            /* Sidebar ko do rows (Content 1 aur neeche wali row) tak failata hai. */
+            grid-row: span 2;
+        }
+
+        #content1 {
+            /* Content 1 ko do columns jitni jagah deta hai. */
+            grid-column: span 2;
+        }
