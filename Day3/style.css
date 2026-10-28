@@ -47,7 +47,7 @@
 
         #sidebar {
             /* Sidebar ko do rows (Content 1 aur neeche wali row) tak failata hai. */
-            grid-row: span 2;
+            grid-row: span 3;
         }
 
         #content1 {
