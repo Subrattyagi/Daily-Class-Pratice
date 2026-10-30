@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animantions ka Gyaan</title>
+</head>
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: skyblue;
+        border: 4px solid black;
+        position: relative;
+    }
+
+    #box{
+        height: 100px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: yellow;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+        animation-name: rightMovement;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-timing-function: alternate;
+        /* animation-direction: reverse; */
+    }
+ 
+@keyframes rightMovement{
+    from {
+        top: 0px;
+        left: 0px;
+    }
+
+    to{
+        top: 0px;
+        left: 1000px;
+    }
+}
+    #box2{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    animation: 5s ease-in 1s infinite alternate none running leftMovement;
+}
+
+@keyframes leftMovement {
+    from {
+        top: 500px;
+        left: 1000px;
+    }
+
+    to {
+        top: 500px;
+        left: 0px;
+    }
+
+}
+
+ #circle {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 3px solid yellow;
+    border-radius: 50px;
+    position: absolute;
+    animation: 10s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+    }
+
+@keyframes circleMovement {
+    0% {
+        top: 10px;
+        left: 10px;
+    }
+
+    30% {
+        top: 10px;
+        left: 300px;
+    }
+
+    60% {
+        top: 200px;
+        left: 10px;
+    }
+
+    100% {
+        top: 200px;
+        left: 300px;
+    }
+}
+
+
+</style>
+<body>
+    <div class="container">
+        <div id="box">
+        </div>
+        <div id="box2"></div>
+        <div id="circle"></div>
+    </div>
+</body>
+</html>
