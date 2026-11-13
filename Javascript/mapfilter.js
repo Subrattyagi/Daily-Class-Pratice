@@ -30,10 +30,28 @@
 //reduce() method
 //reduce() array ke multiple elements ko combine karke ek single result banata hai.
 
-// let numbers = [10, 20, 30, 40];
+// let numbers = [10, 20, 30, 40]; 
 
 // let result = numbers.reduce(function(total, num) {
-//     return total + num;
+//     return total + num;   // 100
 // }, 0);
 
 // console.log(result);
+
+
+// // for each
+
+// let numbers = [10, 20, 30, 40];
+
+//  numbers.forEach(function(num) {
+//     console.log(num);
+// });
+
+// Ex-2
+
+let numbers = [10, 20, 30, 40];
+
+numbers.forEach(function(num) {
+    let result = num * 2;
+    console.log(result);
+});
