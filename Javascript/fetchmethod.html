@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API</title>
+</head>
+<body>
+
+    <h2>Fetch API Example</h2>
+
+    <script>
+        async function getData() {
+            let response = await fetch("https://dummyjson.com/users/1");
+            let data = await response.json();
+            console.log(data);
+        }
+
+        getData();
+    </script>
+
+</body>
+</html>
